@@ -1,0 +1,22 @@
+// C program to reverse a string 
+// using recursion
+# include <stdio.h>
+
+// Function to print reverse of 
+// the passed string 
+void reverse(char *str)
+{
+if (*str)
+{
+	reverse(str + 1);
+	printf("%c", *str);
+}
+}
+
+
+int main()
+{
+char a[] = "my name is ankit yadav";
+reverse(a);
+return 0;
+}
